@@ -1,0 +1,63 @@
+[
+  {
+    "state-province": "S\u00e3o Paulo",
+    "name": "Funda\u00e7\u00e3o Herm\u00ednio Ometto",
+    "alpha_two_code": "BR",
+    "domains": [
+      "fho.edu.br"
+    ],
+    "web_pages": [
+      "https://www.fho.edu.br/"
+    ],
+    "country": "Brazil"
+  },
+  {
+    "state-province": null,
+    "name": "Universidade Comunit\u00e1ria da Regi\u00e3o de Chapec\u00f3 - Unochapec\u00f3",
+    "alpha_two_code": "BR",
+    "domains": [
+      "unochapeco.edu.br"
+    ],
+    "web_pages": [
+      "https://unochapeco.edu.br/"
+    ],
+    "country": "Brazil"
+  },
+  {
+    "state-province": null,
+    "name": "Centro Universit\u00e1rio de Bras\u00edlia, UNICEUB",
+    "alpha_two_code": "BR",
+    "domains": [
+      "sempreceub.com",
+      "uniceub.br"
+    ],
+    "web_pages": [
+      "https://www.uniceub.br/"
+    ],
+    "country": "Brazil"
+  },
+  {
+    "state-province": null,
+    "name": "Centro Universit\u00e1rio Barao de Maua",
+    "domains": [
+      "baraodemaua.br"
+    ],
+    "alpha_two_code": "BR",
+    "web_pages": [
+      "http://www.baraodemaua.br/"
+    ],
+    "country": "Brazil"
+  },
+  {
+    "state-province": null,
+    "name": "Universidade Braz Cubas",
+    "domains": [
+      "brazcubas.br"
+    ],
+    "alpha_two_code": "BR",
+    "web_pages": [
+      "http://www.brazcubas.br/"
+    ],
+    "country": "Brazil"
+  }
+]
