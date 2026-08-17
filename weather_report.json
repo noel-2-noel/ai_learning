@@ -1,0 +1,23 @@
+[
+  {
+    "city": "Kochi",
+    "temperature": 26.99,
+    "feels_like": 30,
+    "description": "broken clouds",
+    "humidity": 83
+  },
+  {
+    "city": "Thrissur",
+    "temperature": 25.66,
+    "feels_like": 26.63,
+    "description": "broken clouds",
+    "humidity": 90
+  },
+  {
+    "city": "Kottayam",
+    "temperature": 25.31,
+    "feels_like": 26.19,
+    "description": "broken clouds",
+    "humidity": 88
+  }
+]

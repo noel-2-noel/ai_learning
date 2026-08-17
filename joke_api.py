@@ -15,8 +15,6 @@ def get_joke():
         with open("jokes.json",'a') as f:
             json.dump(data,f)
             f.write('\n')
-        
-        
         return data
     except requests.exceptions.Timeout:
         print("Request timed out")
