@@ -16,7 +16,7 @@ def get_weather(city):
     params={
         "q":city,
         'appid':API_KEY,
-        'units':'metric'
+        'units':'metric
     }
     
     try:
