@@ -6,6 +6,10 @@ from dotenv import load_dotenv
 load_dotenv()
 API_KEY =os.getenv("Weather_api_key")
 
+if not API_KEY:
+    print("Error: WEATHER API KEY not found in .env file")
+    exit
+
 def get_weather(city):
     url="https://api.openweathermap.org/data/2.5/weather"
     
@@ -20,6 +24,7 @@ def get_weather(city):
         response.raise_for_status
         
         data=response.json()
+        
         
         weather={
             'city':data['name'],
