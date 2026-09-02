@@ -7,6 +7,7 @@ Python + APIs foundation built as part of my 90-day AI learning plan.
 - **joke_api.py** — Fetches 3 random jokes from a public API and saves to jokes.json
 - **query_parameters.py** — Searches universities by country using query parameters
 - **weather.py** — Gets live weather for 3 Kerala cities using OpenWeatherMap API
+- **news.py** — Searches top 5 news articles by topic using GNews API, saves to news_results.json
 
 ## Setup
 

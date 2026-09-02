@@ -3,9 +3,13 @@ import os
 import json
 from dotenv import load_dotenv
 
+# Load environment variables from .env file into os environment
 load_dotenv()
+
+# Get the API key from environment — returns None if .env is missing
 API_KEY =os.getenv("Weather_api_key")
 
+# Safety check
 if not API_KEY:
     print("Error: WEATHER API KEY not found in .env file")
     exit
