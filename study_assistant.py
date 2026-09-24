@@ -51,21 +51,28 @@ while True:
             'content':user_input
         }
     )
-    response=client.chat.completions.create(
-        model="openai/gpt-oss-20b",
-        messages=messages
-    )
+    try:
+        response=client.chat.completions.create(
+            model="openai/gpt-oss-20b",
+            messages=messages
+        )
     
-    reply=response.choices[0].message.content
+        reply=response.choices[0].message.content
     
-    messages.append(
-        {
-            'role':'assistant',
-            'content':reply
-        }
-    )
+        messages.append(
+            {
+                'role':'assistant',
+                'content':reply
+            }
+        )
     
-    print(f"\nAssistant: {reply}\n")
+        print(f"\nAssistant: {reply}\n")
+    
+    except Exception as e:
+        print(f"\nError getting response: {e}")
+        print("Try Again.\n")
+        messages.pop()
+        conversation_topics.pop()
 
 print("\n Generating your session summary...\n")
 
