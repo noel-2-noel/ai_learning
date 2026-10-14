@@ -1,0 +1,22 @@
+Python was created by Guido van Rossum and first released in 1991.
+Python emphasizes code readability and simplicity over complexity.
+Python supports multiple programming paradigms including procedural, object-oriented, and functional programming.
+Python is widely used in web development, data science, artificial intelligence, and automation.
+The Python Package Index (PyPI) hosts over 400,000 packages for Python developers.
+
+Machine learning is a branch of artificial intelligence focused on building systems that learn from data.
+Supervised learning uses labeled training data to learn a mapping from inputs to outputs.
+Unsupervised learning finds hidden patterns in data without labeled examples.
+Neural networks are computing systems inspired by biological neural networks in the human brain.
+Deep learning uses neural networks with many layers to learn complex representations of data.
+
+RAG stands for Retrieval Augmented Generation.
+RAG combines a retrieval system with a language model to produce accurate answers.
+The retrieval step finds relevant documents from a knowledge base using semantic search.
+The generation step uses an LLM to produce a natural language answer from retrieved context.
+RAG reduces hallucination by grounding the LLM response in retrieved facts.
+
+ChromaDB is an open source vector database designed for AI applications.
+ChromaDB stores documents as embeddings and enables fast similarity search.
+ChromaDB supports persistent storage so your data survives between sessions.
+ChromaDB can be used locally without any cloud setup or API keys.
