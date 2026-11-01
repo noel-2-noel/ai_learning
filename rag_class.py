@@ -44,14 +44,34 @@ class RAGSystem:
         print(f"Loaded '{filepath}'- added{len(chunks)} chunks")
         print(f"Total documents in collection: {self.collection.count()}\n")
         return chunks
+    
+    def load_text(self, text, chunk_words=40, overlap=10):
+        """Chunk raw text by word count and add it to the vector database"""
+        words = text.split()
+        step = chunk_words - overlap
 
-    def retrieve(self,query,n_results=3,distance_threshold=1.3):
+        chunks = []
+        for i in range(0, len(words), step):
+            chunk = " ".join(words[i:i + chunk_words])
+            if chunk:
+                chunks.append(chunk)
+
+        start = self.collection.count()
+        self.collection.add(
+            documents=chunks,
+            ids=[f"chunk_{start + i}" for i in range(len(chunks))]
+        )
+        return len(chunks)
+    
+    def retrieve(self,query,n_results=3,distance_threshold=10):
         """Retrieve relevant chunks from ChromaDB"""
         
         results=self.collection.query(
             query_texts=[query],
             n_results=n_results
         )
+        
+        print("distance :",results["distances"][0])
         
         documents=[]
         for doc,distance in zip(results['documents'][0],results['distances'][0]):
