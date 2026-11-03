@@ -93,12 +93,32 @@ def generate(query,context_docs):
 
 
 def rag(query):
-    print(f"Q:{query}")
     docs=retrieve(query)
     answer=generate(query,docs)
-    print(f"A:{answer}\n")
+    return answer,docs
+
+while True:
+    user_input=input("Ask a question(or quit)").strip()
+    
+    if not user_input:
+        continue
+    
+    if user_input.lower()=='quit':
+        print("Goodbye!")
+        break
+    
+    answer,docs=rag(user_input)
+    
+    print(f"\nA:{answer}")
+    
+    if docs:
+        print("\nSources")
+        for i,doc in enumerate(docs,start=1):
+            print(f"{i}.{doc}")
+    print()
+'''
 rag("When was Python created and by whom?")
 rag("What is the difference between supervised and unsupervised learning?")
 rag("How does RAG reduce hallucination?")
 rag("What makes ChromaDB useful for AI applications?")
-rag("What is the capital of France?")
+rag("What is the capital of France?")'''
